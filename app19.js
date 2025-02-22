@@ -31,7 +31,7 @@
 //git-free&open source version control system(tools that help to tracks changes in code)
 //1.track history ,2.help to collaborate with team 
 //github - website where we host respositories online
-//commit means changes
+//commit means changes.
 
 //using git
 //-command line
@@ -45,6 +45,45 @@
 //basic commands
 //clone-cloning repository on our local machine(git clone <-some link->)to copy code in vs code from any github repository(link is code=>https)
 //status-displays the state of the code(git status)
-//add-adds new or changed files in your working directory to the Git staging area (git add <-file name-> or git add.)(jo humne nayi banai h)
+//add-adds new or changed files in your working directory to the Git staging area (git add <-file name-> or git add .(for all files))(jo humne nayi banai h)
 //commit-it is record of change (git commit -m "some message")ex-git commit -m "add new files"
 //push-upload local repo content to remote repo(git push origin main)
+//pushing local repo
+//init-used to create a new git repo 
+//git remote add origin <-link->(link of https after creating new repository in which we want to push the code.)
+//git remote -v(to verify remote)
+//git branch(to check branch),generally for group project ,everyone make its own branch to code and work
+//git branch -M main(to rename branch).
+
+
+//To need to write again and again(git push origin main) to save any change.similarly for pull
+//git push -u origin main(setting upstream)
+//git push
+
+//workflow-In github ->code changes->commit
+//In local Git->code changes->add(stage a change)->commit(commit changes)->push.
+
+//git branches(to smooth development process and maintain hierarchy)
+//branch commands - git branch(to check branch)
+//git branch -M main(to rename branch)
+//git checkout <-branch name->(to navigate)
+//git checkout -b <-new branch name->(to create new branch)
+//git branch -d<-branch name->(to delete branch) 
+//to merge branch(git push --set-upstream origin feature)(feature is a branch that we have created.)
+
+//merging code-> git diff <-branch name->(to compare commits,branches,files & more)
+//git merge <-branch name->(to merge 2 branches) or create a PR(pull request)
+//pull request->It lets you tell others changes you've pusheed to a branch in a repository on Github
+//all files of feature branch will also show in main branch also.
+//pull command//git pull origin main(used to fetch and download content from a remote repo and immediately update the local repo to match that content)
+//merge conflicts(An event that take place when Git is unable to automatically resolve differences in code between two commits)
+
+//fixing mistakes -
+//case1:staged changes 
+//git reset <-file name->
+//git reset
+//case 2: commited changes (for one commit)
+//git reset HEAD~1
+//case 3:commited changes (for many commits)
+//git reset <-commit hash->
+//git reset --hard <-commit hash->
